@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:100,200,300,300i,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body {
+  font-family: "Open Sans", serif;
+}
+html, body, #root, .carousel, .home_wrapper {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+
+.image-slide {
+  height: 100%;
+  width: 100%;
+  
+}
+.slider-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.slide-arrow {
+  color: #999;
+  cursor: pointer;
+  font-size: 2rem;
+  position: fixed;
+  top: 50%;
+  transition: transform ease-in .1s;
+}
+
+.slide-arrow.right {
+  right: 1rem;
+}
+
+.slide-arrow.left {
+  left: 1rem;
+}
+
+/* About Us Section */
+.about_wrapper {
+    padding: 100px 50px 50px;
+	background: #e6e6e6;
+    color: #000;
+}
+
+/* Media Queries */
+@media (min-width: 992px) {
+	.container {
+		max-width: 970px;
+		width: 100%;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 90vw;
+		width: 100%;
+	}
+}
+@media (max-width: 992px) {
+	.title-container__subtitle {
+		font-size: 15px;
+	}
+	.title-container__title {
+		font-size: 35px;
+		margin-top: 155px;
+		text-transform: uppercase;
+	}
+	input[type="text"],
+	button	{
+		width: 100%;
+		max-width: inherit;
+	}
+	.form-container {
+		padding-right: 50px;
+	}
+	.weather-info {
+		margin: 30px 0;
+	}
+	.title-container {
+		height:50vh;
+		background-position: top center;
+	}
+	.main,
+	.wrapper	{
+		height: 100%;
+	}
+}
