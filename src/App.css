@@ -25,7 +25,7 @@ html, body, #root, .carousel, .home_wrapper {
   color: #999;
   cursor: pointer;
   font-size: 2rem;
-  position: fixed;
+  position: absolute;
   top: 50%;
   transition: transform ease-in .1s;
 }
@@ -41,10 +41,45 @@ html, body, #root, .carousel, .home_wrapper {
 /* About Us Section */
 .about_wrapper {
     padding: 100px 50px 50px;
-	background: #e6e6e6;
+    background: #ddd;
     color: #000;
+    width: 100%;
+    display: block;
 }
-
+.inner_div {
+    width: 69%;
+    float: right;
+}
+.inner_div p {
+	font-size: 14px;
+	width: 75%;
+}
+.image-div {
+	max-width: 350px;
+    display: inline-block;
+	margin-right: 25px;
+}
+.image-div img {
+	max-width: 100%;
+    width: 350px;
+    height: auto;
+    text-align: right;
+}
+.submit_button {
+	color: #fff;
+    background: #337;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 15px;
+    display: inline-block;	
+}
+.submit_button:hover,
+.submit_button:active,
+.submit_button:focus {
+	text-decoration: none;
+	color: #fff;
+	background: #000;
+}
 /* Media Queries */
 @media (min-width: 992px) {
 	.container {
